@@ -1,4 +1,4 @@
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Prashant Sharma's portfolio — Computer Engineering student, Python developer, and AI/ML enthusiast.">
     <title>Prashant Sharma | Developer Portfolio</title>
-
-    <link rel="stylesheet" href="/style.css">
-    <script src="script.js" defer></script>
+<link rel="stylesheet" href="{% static 'style.css' %}">
+    <script src="{% static 'script.js' %}"></script>
 </head>
 <body>
 
@@ -66,8 +65,7 @@
             </div>
         </section>
 <div class="hero-photo">
-    <img src="/profile.jpg"
-         alt="Portrait of Prashant Sharma">
+    <img src="{% static 'profile.jpg' %}" alt="Portrait of Prashant Sharma">
 </div>
         <section class="section" id="about">
             <div class="container">
@@ -283,6 +281,6 @@
             <p>© <span id="year"></span> Prashant Sharma</p>
         </div>
     </footer>
-<script src="/script.js"></script>
+<script src="{% static 'script.js' %}"></script>
 </body>
 </html>
